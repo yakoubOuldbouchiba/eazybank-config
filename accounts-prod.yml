@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 accounts:
-  message: "Welcome to EazyBank accounts related Production APIs"
+  message: "Welcome to EazyBank accounts related Production -  APIs"
   contactDetails:
     name: "Yakoub Ould bouchiba - Product Owner"
     email: "{cipher}6da44ad47c1a4ae03473557b336d63a6b3d2da6f6fadb49fab406e22d6fe5beb5f3d9e29e8f914668767045d598eab66"
