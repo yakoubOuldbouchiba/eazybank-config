@@ -8,9 +8,9 @@ spring:
     password: root
   jpa:
     show-sql: true
-    sql:
-      init:
-        mode: always
+  sql:
+    init:
+      mode: always
 
 build:
   version: "3.0"
