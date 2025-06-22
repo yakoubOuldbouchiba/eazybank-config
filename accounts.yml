@@ -6,14 +6,11 @@ spring:
     driverClassName: org.h2.Driver
     username: root
     password: root
-  h2:
-    console:
-      enabled: true
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: update
     show-sql: true
+    sql:
+      init:
+        mode: always
 
 build:
   version: "3.0"
