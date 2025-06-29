@@ -1,6 +1,10 @@
 server:
   port: 9000
 spring:
+  application:
+    name: "cards"
+  profiles:
+    active:  "prod"
   datasource:
     url: jdbc:mysql://localhost:3308/cardsdb
     username: root
@@ -10,6 +14,14 @@ spring:
   sql:
     init:
       mode: always
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: guest
+    password: guest
+
 build:
   version: "3.0"
 
@@ -21,6 +33,7 @@ cards:
   onCallSupport:
     - (555) 555-1234
     - (555) 555-1235
+
 management:
   endpoints:
     web:
@@ -45,5 +58,5 @@ eureka:
 info:
   app:
     name: "cards"
-    description: "Eazy Bank Cards Application"
-    version: "1.0.0
+    description: "Eazy Bank cards Application"
+    version: "1.0.0"
