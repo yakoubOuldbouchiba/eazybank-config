@@ -30,6 +30,9 @@ management:
   endpoint:
     shutdown:
       access: unrestricted
+    health:
+      probes:
+        enabled: true
   health:
     readinessstate:
       enabled: true
