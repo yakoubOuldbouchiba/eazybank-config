@@ -24,6 +24,14 @@ info:
     name: "gatewayserver"
     description: "Eazy Bank Gatewayserver Application"
     version: "1.0.0"
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://eurekaserver:8070/eureka/
 
 logging:
   level:
